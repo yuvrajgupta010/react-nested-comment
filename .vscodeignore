@@ -1,0 +1,11 @@
+# Files excluded from the packaged .vsix (we ship only compiled JS + docs)
+.vscode/**
+src/**
+out/test/**
+**/*.map
+**/*.ts
+tsconfig.json
+.gitignore
+.vscodeignore
+node_modules/**
+**/.git/**

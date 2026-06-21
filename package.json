@@ -1,0 +1,35 @@
+{
+  "name": "jsx-safe-commenting",
+  "displayName": "JSX Safe Commenting",
+  "description": "Makes Ctrl+/ (toggle comment) safe inside JSX/TSX by neutralising nested comment delimiters.",
+  "version": "0.0.1",
+  "publisher": "local-dev",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Formatters",
+    "Other"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onLanguage:javascriptreact",
+    "onLanguage:typescriptreact"
+  ],
+  "contributes": {},
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "mocha out/test/**/*.test.js"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.85.0",
+    "mocha": "^10.3.0",
+    "typescript": "^5.4.0"
+  }
+}
